@@ -2,9 +2,13 @@
 
 This project shows how you could use [webpack's css-modules](https://github.com/webpack/css-loader) in Elm's development. This is an alternative approach as compared to [elm-css](https://github.com/rtfeldman/elm-css), which is a more functional and pure approach towards declaring component styles.
 
-CSS modules allow us to continue writing styles in familiar ways (CSS / SASS / LESS / Stylus, etc), yet gain the benefits of [local scoping](/src/Login.css) for classes. There is also 100% compatibility with doing animations, pseudo selectors, and media queries. You can also use also continue to use your favorite tooling around CSS like [autoprefixer](https://github.com/postcss/autoprefixer).
 
-There are also escape hatches in case want to have a [global class selector](/src/Main.css). More information about the CSS Module specification [here](https://github.com/css-modules/css-modules).
+## Benefits of this approach
+
+- CSS Modules: Dynamically generated locally scoped namespaces for classes. 100% compatibility with doing animations / pseudo selectors and media queries, anything you could do with css. Use all the tooling developed on top of CSS like autoprefixer.
+
+- Interop with existing projects: Projects using webpack + css modules could easily port all styles into Elm using this approach.
+
 
 ## How?
 
