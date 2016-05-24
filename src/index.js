@@ -8,6 +8,7 @@ app.ports.fetchClasses.subscribe(function(cssFile) {
   const styles = req(cssFile);
 
   setImmediate(function() {
+    // We need to defer to next tick otherwise Elm does not process these commands on initial load
     app.ports.receiveClasses.send(styles);
   });
 });
