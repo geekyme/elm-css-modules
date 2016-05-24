@@ -1,0 +1,11 @@
+.articles {
+  background: whiteSmoke;
+  width: 480px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.articles:hover {
+  background: #bdbdbd;
+}
