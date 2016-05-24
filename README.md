@@ -2,6 +2,7 @@
 
 This project shows how you could use [webpack's css-modules](https://github.com/webpack/css-loader) in Elm's development. This is an alternative approach as compared to [elm-css](https://github.com/rtfeldman/elm-css), which is a more functional and pure approach towards declaring component styles.
 
+This is not meant to be set-in-stone truth, but rather a proof-of-concept. Try it and adapt it to your needs!
 
 ## Benefits of this approach
 
