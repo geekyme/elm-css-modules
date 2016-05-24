@@ -6,6 +6,10 @@ CSS modules allow us to continue writing styles in familiar ways (CSS / SASS / L
 
 There are also escape hatches in case want to have a [global class selector](/src/Main.css). More information about the CSS Module specification [here](https://github.com/css-modules/css-modules).
 
+## How?
+
+CSS modules get loaded into Elm via [ports and subscriptions](http://guide.elm-lang.org/interop/javascript.html). See [fetchClasses and receiveClasses](/src/Class.elm) and example usage in [Login.elm](/src/Login.elm). Webpack receives commands from elm and loads the css modules [here](/src/index.js). This goes through the Elm Architecture in the application and the css modules will eventually reach the component that needs it.
+
 ## Requirements
 
 - Node 6.x.x
